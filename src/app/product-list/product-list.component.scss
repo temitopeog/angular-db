@@ -1,0 +1,40 @@
+.product-item {
+  border: 1px black solid; 
+  margin: 5px; 
+  padding: 5px;
+}
+.center {
+  text-align: center;
+}
+.example-card {
+  max-width: 320px;
+}
+
+.imgSize {
+  width: auto;
+  max-height: 300px;
+}
+.action{
+  display: flex;
+  justify-content: space-between;
+}
+.example-header-image {
+  background-size: cover;
+}
+
+.container {
+  flex-direction: row;
+}
+
+.card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  align-items: center;
+  justify-items: center;
+}
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/

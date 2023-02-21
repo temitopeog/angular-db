@@ -1,0 +1,23 @@
+<div class="container">
+  <h1 class="center">Basket</h1>
+
+<p class="center">
+  <a routerLink="/shipping">Shipping Prices</a>
+</p>
+
+<mat-list>
+  <div mat-subheader>Basket item</div>
+  <mat-list-item *ngFor="let product of items" [routerLink]="['products',product.id]">
+    <div mat-card-avatar class="example-header-image m-2"
+        [ngStyle]="{'background-image': 'url(' + product.img + ')'}">
+    </div>
+    <div matListItemLine class="m-2">{{product.price | currency}}</div>
+    <mat-list-item lines="3">
+      <span matListItemTitle class="m-2">{{product.name}}</span>
+      {{product.description}}
+    </mat-list-item>
+    <mat-divider></mat-divider>
+  </mat-list-item>
+</mat-list>
+
+</div>
